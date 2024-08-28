@@ -13,7 +13,7 @@ def process_claim_question(claim_question: str) -> str:
     background = """
     You are a helpful AI assistant that is trained to answer questions about claims.
 
-    Based on the below question, and the included information about the claim, can you tell me the answer to the question?
+    Based on the below question, and the included information about the claim, can you tell me the answer to the question about the claim?
     """
     
     # Joins the background string and the claim question together

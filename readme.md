@@ -40,6 +40,4 @@ curl -X POST http://localhost:8000/claim-question \
   -H "Content-Type: application/json" \
   -d '{"question": "How many dollars is this claim?"}'
 Sample response
-{
-  "answer": "Your claim costs 64 dollars"
-}
+{"question":"Why was this claim denied?\n\n{\"patient_name\":\"Jane Doe\",\"patient_date_of_birth\":\"1985-01-15\",\"patient_id\":\"123456789\",\"provider_name\":\"Dr. John Smith, MD\",\"provider_npi\":\"1234567890\",\"date_of_service\":\"2024-08-15\",\"cpt_code\":\"30410\",\"diagnosis_code\":\"Z41.1\",\"charge_amount\":7500.00,\"insurance_plan_name\":\"XYZ Health Plan\",\"claim_status\":\"Pending Denial\",\"reason_for_procedure\":\"Patient requested rhinoplasty for aesthetic improvement, no medical necessity.\"}","answer":"The claim was denied because the procedure, rhinoplasty (CPT code 30410), was requested for aesthetic improvement only, and there was no medical necessity shown for the procedure."}
