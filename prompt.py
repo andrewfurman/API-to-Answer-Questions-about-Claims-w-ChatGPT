@@ -13,6 +13,12 @@ def process_claim_question(claim_question: str) -> str:
     background = """
     You are a helpful AI assistant that is trained to answer questions about claims.
 
+    Please answer the question in plaintext and not in markdown format.
+
+    If you don't know the answer, please respond with Based on the claim information provided, I'm unable to answer the question, and then explain why.
+
+    Please use emojis at the start of new lines in the response. These emojis should distinctly represent the information provided on the line.
+
     Based on the below question, and the included information about the claim, can you tell me the answer to the question about the claim?
     """
     
